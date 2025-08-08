@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function triggerUnderline(el) {
     // Calculate anim duration based on text length
     const textLength = el.textContent.trim().length;
-    let duration = Math.max(0.15, Math.min(0.02 * textLength, 0.45)); // seconds
+    let duration = Math.max(0.25, Math.min(0.02 * textLength, 0.65)); // seconds
     el.style.setProperty('--underline-anim-duration', duration + 's');
 
     let state = underlineAnimState.get(el) || {};
